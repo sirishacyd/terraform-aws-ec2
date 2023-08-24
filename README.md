@@ -31,6 +31,7 @@ Default output format:
 terraform init
 ```
 
+  
 ### 4. Review the Terraform Plan:
 
 Inspect the resources that Terraform plans to create/modify:
@@ -38,7 +39,8 @@ Inspect the resources that Terraform plans to create/modify:
 ```bash
 terraform plan
 ```
-
+ ![plan](screenshots/plan.png)
+ 
 ### 5. Apply the Configuration:
 
 Execute the Terraform configuration to create the AWS resource:
@@ -46,10 +48,14 @@ Execute the Terraform configuration to create the AWS resource:
 ```bash
 terraform apply
 ```
-
+ 
 ### 6. Outputs:
 
 After the successful application of the configuration, Terraform will display the public DNS of the created EC2 instance.
+
+ ![dns](screenshots/dns.png)
+
+  ![ec2](screenshots/ec2.png)
 
 ## Cleanup:
 
@@ -59,3 +65,4 @@ To avoid ongoing AWS charges, destroy the Terraform-managed resources when done:
 terraform destroy
 ```
 
+ ![destroy](screenshots/destroy.png)
