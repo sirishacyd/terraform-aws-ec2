@@ -30,7 +30,7 @@ Default output format:
 ```bash
 terraform init
 ```
-
+![init](screenshots/init.png)
   
 ### 4. Review the Terraform Plan:
 
@@ -55,7 +55,7 @@ After the successful application of the configuration, Terraform will display th
 
  ![dns](screenshots/dns.png)
 
-  ![ec2](screenshots/ec2.png)
+![ec2](screenshots/ec2.png)
 
 ## Cleanup:
 
@@ -65,4 +65,4 @@ To avoid ongoing AWS charges, destroy the Terraform-managed resources when done:
 terraform destroy
 ```
 
- ![destroy](screenshots/destroy.png)
+![destroy](screenshots/destroy.png)
