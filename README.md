@@ -12,10 +12,18 @@
 git clone git@github.com:sirishacyd/terraform-aws-ec2.git
 cd terraform-aws-ec2
 ```
-### 2. Variable Configuration :
+### 2. Configuration files:
 
-* All configuration variables are stored in the `variables.tf` file, promoting modularity and easy configurability.
-* [variables](https://github.com/sirishacyd/terraform-aws-ec2/blob/main/variables.tf)
+- **main.tf**: Contains the primary AWS resources configurations, including the EC2 instance setup.
+  - [View main.tf](https://github.com/sirishacyd/terraform-aws-ec2/blob/main/main.tf)
+  
+- **variables.tf**: Declares the variables used across configurations, making it modular and flexible for changes.
+  - [View variables.tf](https://github.com/sirishacyd/terraform-aws-ec2/blob/main/variables.tf)
+
+- **output.tf**: Defines the outputs (in this case, the public DNS of the EC2 instance) post Terraform apply.
+  - [View output.tf](https://github.com/sirishacyd/terraform-aws-ec2/blob/main/output.tf)
+
+
 
 ### 2. Configure AWS Credentials:
 
@@ -28,6 +36,7 @@ AWS Secret Access Key:
 Default region name : 
 Default output format:
 ```
+
 
 ### 3. Initialize Terraform:
 
