@@ -25,7 +25,7 @@ cd terraform-aws-ec2
 
 
 
-### 2. Configure AWS Credentials:
+### 2. Configure AWS Credentials& Key pair:
 
 Ensure you have set up your AWS credentials using the AWS CLI:
 
@@ -37,6 +37,10 @@ Default region name :
 Default output format:
 ```
 
+- **Create an AWS Key Pair**:
+This key pair will be used to securely connect to instances created by Terraform.
+
+![keypair](screenshots/keypair.png)
 
 ### 3. Initialize Terraform:
 
