@@ -23,6 +23,11 @@ variable "subnet_id" {
   default     = "subnet-0440f16816f0aaae5"
 }
 
+variable "vpc_id" {
+  description = "VPC ID where EC2 should be launched"
+  default     = "vpc-xxxxxxxxxxxxx" 
+}
+
 variable "tags" {
   description = "Tags to be applied to resources"
   type        = map(string)
