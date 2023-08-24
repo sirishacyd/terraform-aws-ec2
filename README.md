@@ -6,12 +6,16 @@
 
 ## Setup & Deployment
 
-### 1. Clone the Repository:
+### 1. GitHub Repository:
 
 ```bash
 git clone git@github.com:sirishacyd/terraform-aws-ec2.git
 cd terraform-aws-ec2
 ```
+### 2. Variable Configuration :
+
+* All configuration variables are stored in the `variables.tf` file, promoting modularity and easy configurability.
+* [variables](https://github.com/sirishacyd/terraform-aws-ec2/blob/main/variables.tf)
 
 ### 2. Configure AWS Credentials:
 
