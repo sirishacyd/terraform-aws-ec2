@@ -1,4 +1,7 @@
-# Terraform AWS EC2 Setup
+## Introduction
+
+This  assignment aims to set up an AWS EC2 instance with the specified configurations. The assignment provides modularity through the use of variables, making it flexible and customizable according to user needs.
+
 ## Prerequisites
 
 1. Install [Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli).
