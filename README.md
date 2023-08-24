@@ -25,7 +25,7 @@ cd terraform-aws-ec2
 
 
 
-### 2. Configure AWS Credentials& Key pair:
+### 3. Configure AWS Credentials& Key pair:
 
 Ensure you have set up your AWS credentials using the AWS CLI:
 
@@ -42,14 +42,14 @@ This key pair will be used to securely connect to instances created by Terraform
 
 ![keypair](screenshots/keypair.png)
 
-### 3. Initialize Terraform:
+### 4. Initialize Terraform:
 
 ```bash
 terraform init
 ```
 ![init](screenshots/init.png)
   
-### 4. Review the Terraform Plan:
+### 5. Review the Terraform Plan:
 
 Inspect the resources that Terraform plans to create/modify:
 
@@ -58,7 +58,7 @@ terraform plan
 ```
  ![plan](screenshots/plan.png)
  
-### 5. Apply the Configuration:
+### 6. Apply the Configuration:
 
 Execute the Terraform configuration to create the AWS resource:
 
@@ -66,17 +66,17 @@ Execute the Terraform configuration to create the AWS resource:
 terraform apply
 ```
  
-### 6. Outputs:
+### 7. Outputs:
 
 After the successful application of the configuration, Terraform will display the public DNS of the created EC2 instance.
 
- ![dns](screenshots/dns.png)
+![dns](screenshots/dns.png)
 
 ![ec2](screenshots/ec2.png)
 
-## Cleanup:
+## 8.Cleanup:
 
-To avoid ongoing AWS charges, destroy the Terraform-managed resources when done:
+Destroy the Terraform-managed resources when done:
 
 ```bash
 terraform destroy
