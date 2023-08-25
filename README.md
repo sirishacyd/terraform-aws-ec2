@@ -61,7 +61,7 @@ tags = {
 }
 ```
 - **terrafrorm.tfvars**: Setup Variable in the tfvars file based on environment you need the instance in.
-  - [View output.tf](https://github.com/sirishacyd/terraform-aws-ec2/blob/main/terraform.tfvars)
+  - [tfvars](https://github.com/sirishacyd/terraform-aws-ec2/blob/main/terraform.tfvars)
   
 ### 5. Initialize Terraform:
 
