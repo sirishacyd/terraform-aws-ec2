@@ -27,7 +27,7 @@ cd terraform-aws-ec2
   - [View output.tf](https://github.com/sirishacyd/terraform-aws-ec2/blob/main/output.tf)
 
 - **terrafrorm.tfvars**: Setup Variable in the tfvars file based on environment you need the instance in.
-  - [View output.tf](https://github.com/sirishacyd/terraform-aws-ec2/blob/main/terraform.tfvars)
+  - [tfvars](https://github.com/sirishacyd/terraform-aws-ec2/blob/main/terraform.tfvars)
 
 ### 3. Configure AWS Credentials& Key pair:
 
