@@ -86,7 +86,8 @@ Execute the Terraform configuration to create the AWS resource:
 ```bash
 terraform apply
 ```
- 
+![apply](screenshots/apply.png)
+  
 ### 8. Outputs:
 
 After the successful application of the configuration, Terraform will display the public DNS of the created EC2 instance.
