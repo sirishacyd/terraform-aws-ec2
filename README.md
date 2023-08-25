@@ -26,7 +26,8 @@ cd terraform-aws-ec2
 - **output.tf**: Defines the outputs (in this case, the public DNS of the EC2 instance) post Terraform apply.
   - [View output.tf](https://github.com/sirishacyd/terraform-aws-ec2/blob/main/output.tf)
 
-
+- **terrafrorm.tfvars**: Setup Variable in the tfvars file based on environment you need the instance in.
+  - [View output.tf](https://github.com/sirishacyd/terraform-aws-ec2/blob/main/terraform.tfvars)
 
 ### 3. Configure AWS Credentials& Key pair:
 
@@ -45,14 +46,31 @@ This key pair will be used to securely connect to instances created by Terraform
 
 ![keypair](screenshots/keypair.png)
 
-### 4. Initialize Terraform:
+### 4. Setup Variable in the tfvars file based on environment you need the instance in with the below mentioned details
+
+
+```bash
+aws_region = "us-east-2"
+instance_type = "t2.micro"
+subnet_id = "subnet-0440f16816f0aaae5"
+key_name = "aws-ec2"
+ami_id   = "ami-0ccabb5f82d4c9af5"
+tags = {
+  "Name"    = "my-custom-terraform-instance"
+  "Project" = "Demo"
+}
+```
+- **terrafrorm.tfvars**: Setup Variable in the tfvars file based on environment you need the instance in.
+  - [View output.tf](https://github.com/sirishacyd/terraform-aws-ec2/blob/main/terraform.tfvars)
+  
+### 5. Initialize Terraform:
 
 ```bash
 terraform init
 ```
 ![init](screenshots/init.png)
   
-### 5. Review the Terraform Plan:
+### 6. Review the Terraform Plan:
 
 Inspect the resources that Terraform plans to create/modify:
 
@@ -61,7 +79,7 @@ terraform plan
 ```
  ![plan](screenshots/plan.png)
  
-### 6. Apply the Configuration:
+### 7. Apply the Configuration:
 
 Execute the Terraform configuration to create the AWS resource:
 
@@ -69,7 +87,7 @@ Execute the Terraform configuration to create the AWS resource:
 terraform apply
 ```
  
-### 7. Outputs:
+### 8. Outputs:
 
 After the successful application of the configuration, Terraform will display the public DNS of the created EC2 instance.
 
@@ -77,7 +95,7 @@ After the successful application of the configuration, Terraform will display th
 
 ![ec2](screenshots/ec2.png)
 
-## 8.Cleanup:
+## 9.Cleanup:
 
 Destroy the Terraform-managed resources when done:
 
